@@ -16,6 +16,12 @@ export const ContainetLogoStyled = styled.div`
     width: 75px;
     height: 65px;
   }
+  @media (max-width: 768px) {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
 `;
 
 export const ContainerLinksStyled = styled.div`
@@ -26,6 +32,9 @@ export const ContainerLinksStyled = styled.div`
   gap: 40px;
   a {
     padding: 1rem 1.5rem;
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
