@@ -49,6 +49,7 @@ export const HeroImageContainterStyled = styled.div`
     justify-content: center;
     img {
       width: 80%;
+      height: 80px;
     }
   }
 `;
