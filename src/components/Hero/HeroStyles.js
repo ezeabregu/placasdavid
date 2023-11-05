@@ -44,12 +44,8 @@ export const HeroImageContainterStyled = styled.div`
     border-radius: 10px;
   }
   @media (max-width: 768px) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
     img {
       width: 80%;
-      height: 80px;
     }
   }
 `;
