@@ -30,6 +30,7 @@ export const ProductsCard = styled.div`
   padding: 1rem;
   img {
     width: 100%;
+    height: 250px;
     margin-bottom: 1rem;
   }
   h2 {

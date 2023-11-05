@@ -1,6 +1,6 @@
 import React from "react";
 import { ProductsWrapper, ProductsContainter } from "./ProductsStyles";
-import { products } from "../data/products";
+import { products } from "../data/Productos";
 import ProductCard from "./ProductCard";
 
 const Products = () => {
