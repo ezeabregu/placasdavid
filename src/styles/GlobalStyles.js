@@ -2,7 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
     :root{
-         --blue: #00205b;   
+         --blue: #00205b;  
+         --gray: #e2e2e2;
     }
     html{
         scroll-behavior: smooth;
