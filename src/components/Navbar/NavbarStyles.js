@@ -34,6 +34,22 @@ export const ContainerLinksStyled = styled.div`
     padding: 1rem 1.5rem;
   }
   @media (max-width: 768px) {
+    padding: 0 0;
+  }
+`;
+
+export const MenuContainerStyled = styled(ContainerLinksStyled)`
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;
+
+export const LinksStyled = styled.div`
+  display: flex;
+  @media (max-width: 768px) {
     display: none;
   }
 `;
