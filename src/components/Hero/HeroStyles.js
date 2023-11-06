@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HeroContainterStyled = styled.section`
+  height: calc(80vh - 100px);
   display: flex;
   align-items: center;
   justify-content: space-around;

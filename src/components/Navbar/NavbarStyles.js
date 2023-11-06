@@ -14,7 +14,7 @@ export const ContainetLogoStyled = styled.div`
   align-items: center;
   img {
     width: 75px;
-    height: 65px;
+    height: 50px;
   }
   @media (max-width: 768px) {
     img {

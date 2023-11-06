@@ -5,6 +5,8 @@ import {
   AboutTextContainterStyled,
 } from "./AboutStyles";
 import aboutImage from "../../img/aboutImage.jpeg";
+import antesImage from "../../img/antes.jpeg";
+import despuesImage from "../../img/despues.jpeg";
 
 const About = () => {
   return (
@@ -26,6 +28,16 @@ const About = () => {
             presupuesto en el día.
           </p>
         </AboutTextContainterStyled>
+      </AboutContainterStyled>
+      <AboutContainterStyled>
+        <AboutImageContainterStyled>
+          <h2>Antes</h2>
+          <img src={antesImage} alt="AboutImage" />
+        </AboutImageContainterStyled>
+        <AboutImageContainterStyled>
+          <h2>Después</h2>
+          <img src={despuesImage} alt="AboutImage" />
+        </AboutImageContainterStyled>
       </AboutContainterStyled>
     </>
   );
