@@ -59,6 +59,7 @@ export const MenuContainerStyled = styled(ContainerLinksStyled)`
       left: 0;
     }
     a {
+      margin: 3rem 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
