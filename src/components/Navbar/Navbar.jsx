@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../img/favicon.JPG";
 import { motion } from "framer-motion";
 import {
@@ -9,9 +9,13 @@ import {
   MenuContainerStyled,
   LinksStyled,
 } from "./NavbarStyles";
-import { AiOutlineMenu } from "react-icons/ai";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMenu = () => setClick(false);
+
   return (
     <ContainerStyled>
       <ContainetLogoStyled>
@@ -20,22 +24,35 @@ const Navbar = () => {
         </a>
       </ContainetLogoStyled>
       <ContainerLinksStyled>
+        <motion.div whileTap={{ scale: 0.95 }}>
+          <MenuContainerStyled>
+            <div onClick={handleClick}>
+              {click ? <FaTimes /> : <FaBars />}
+              <div className={click ? "menu active" : "menu"}>
+                <a href="#about" onClick={closeMenu}>
+                  Nosotros
+                </a>
+                <a href="#products" onClick={closeMenu}>
+                  Placas
+                </a>
+                <a href="#contact" onClick={closeMenu}>
+                  Contacto
+                </a>
+              </div>
+            </div>
+          </MenuContainerStyled>
+        </motion.div>
         <LinksStyled>
           <a href="#about">
             <SpanStyled>Nosotros</SpanStyled>
           </a>
-          <a href="#products">
+          <a href="#products" onClick={closeMenu}>
             <SpanStyled>Placas</SpanStyled>
           </a>
-          <a href="#contact">
+          <a href="#contact" onClick={closeMenu}>
             <SpanStyled>Contacto</SpanStyled>
           </a>
         </LinksStyled>
-        <motion.div whileTap={{ scale: 0.95 }}>
-          <MenuContainerStyled>
-            <AiOutlineMenu />
-          </MenuContainerStyled>
-        </motion.div>
       </ContainerLinksStyled>
     </ContainerStyled>
   );

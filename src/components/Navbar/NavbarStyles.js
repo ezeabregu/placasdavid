@@ -43,7 +43,27 @@ export const MenuContainerStyled = styled(ContainerLinksStyled)`
   cursor: pointer;
   font-size: 2rem;
   @media (max-width: 768px) {
-    display: flex;
+    display: block;
+    .menu {
+      position: fixed;
+      left: -500%;
+      top: 90px;
+      background-color: var(--gray);
+      width: 100%;
+      height: 90vh;
+      z-index: 999;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .menu.active {
+      left: 0;
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 `;
 
