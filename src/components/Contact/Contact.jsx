@@ -27,15 +27,15 @@ const Contact = () => {
           <h3>Contactate con nosotros</h3>
           <TextContainerStyled>
             <div>
-              <AiFillPhone />
+              <AiFillPhone size={30} color="#131415" />
               011-3158-1752
             </div>
             <div>
-              <AiOutlineWhatsApp />
+              <AiOutlineWhatsApp size={30} color="#075e54" />
               +5491131581752
             </div>
             <div>
-              <AiFillMail />
+              <AiFillMail size={30} color="#131415" />
               alejandro.tonchuk2012@hotmail.com
             </div>
             <div>
@@ -44,10 +44,10 @@ const Contact = () => {
                 href="https://www.instagram.com/placasdavid/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
                 target="blank"
               >
-                <AiFillInstagram />
+                <AiFillInstagram size={50} color="#833ab4" />
               </a>
               <a href="https://www.facebook.com/Placasdavid/" target="blank">
-                <AiFillFacebook />
+                <AiFillFacebook size={50} color="#1877f2" />
               </a>
             </div>
           </TextContainerStyled>

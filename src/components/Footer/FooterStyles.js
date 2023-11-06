@@ -4,7 +4,9 @@ export const FooterContainerStyled = styled.footer`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  p,
+  p {
+    color: #131415;
+  }
   span {
     color: #131415;
     font-weight: 800;

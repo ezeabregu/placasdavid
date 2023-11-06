@@ -18,8 +18,8 @@ export const ContainetLogoStyled = styled.div`
   }
   @media (max-width: 768px) {
     img {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 30px;
     }
   }
 `;
