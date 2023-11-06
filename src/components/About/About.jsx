@@ -9,7 +9,7 @@ import aboutImage from "../../img/aboutImage.jpeg";
 const About = () => {
   return (
     <>
-      <AboutContainterStyled>
+      <AboutContainterStyled id="about">
         <AboutImageContainterStyled>
           <img src={aboutImage} alt="AboutImage" />
         </AboutImageContainterStyled>

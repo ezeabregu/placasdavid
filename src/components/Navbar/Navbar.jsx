@@ -15,19 +15,19 @@ const Navbar = () => {
   return (
     <ContainerStyled>
       <ContainetLogoStyled>
-        <a href="index">
+        <a href="/">
           <img src={logo} alt="logo" />
         </a>
       </ContainetLogoStyled>
       <ContainerLinksStyled>
         <LinksStyled>
-          <a href="about">
+          <a href="#about">
             <SpanStyled>Nosotros</SpanStyled>
           </a>
-          <a href="products">
+          <a href="#products">
             <SpanStyled>Placas</SpanStyled>
           </a>
-          <a href="contact">
+          <a href="#contact">
             <SpanStyled>Contacto</SpanStyled>
           </a>
         </LinksStyled>

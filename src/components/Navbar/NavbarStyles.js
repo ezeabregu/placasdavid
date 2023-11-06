@@ -49,6 +49,8 @@ export const MenuContainerStyled = styled(ContainerLinksStyled)`
 
 export const LinksStyled = styled.div`
   display: flex;
+  justify-content: space-between;
+  cursor: pointer;
   @media (max-width: 768px) {
     display: none;
   }

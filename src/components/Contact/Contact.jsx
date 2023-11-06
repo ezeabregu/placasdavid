@@ -17,7 +17,7 @@ import {
 const Contact = () => {
   return (
     <>
-      <ContactContainterStyled>
+      <ContactContainterStyled id="contact">
         <ContactImageContainterStyled>
           <a href="https://maps.app.goo.gl/vFjmdfUKWYuLDJtx5" target="blank">
             <img src={contactImage} alt="ContactImage" />
