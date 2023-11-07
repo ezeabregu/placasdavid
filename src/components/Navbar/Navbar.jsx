@@ -43,15 +43,27 @@ const Navbar = () => {
           </MenuContainerStyled>
         </motion.div>
         <LinksStyled>
-          <a href="#about">
+          <motion.a
+            href="#about"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <SpanStyled>Nosotros</SpanStyled>
-          </a>
-          <a href="#products" onClick={closeMenu}>
+          </motion.a>
+          <motion.a
+            href="#products"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <SpanStyled>Placas</SpanStyled>
-          </a>
-          <a href="#contact" onClick={closeMenu}>
+          </motion.a>
+          <motion.a
+            href="#contact"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <SpanStyled>Contacto</SpanStyled>
-          </a>
+          </motion.a>
         </LinksStyled>
       </ContainerLinksStyled>
     </ContainerStyled>

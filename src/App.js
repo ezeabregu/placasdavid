@@ -6,28 +6,39 @@ import About from "./components/About/About";
 import Products from "./components/Products/Products";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import { useRef } from "react";
+import { useEffect } from "react";
 
 function App() {
-  const aboutRef = useRef();
-  const productsRef = useRef();
-  const contactRef = useRef();
+  // useEffect(() => {
+  //   const handleScrollButtonVisibility = () => {
+  //     window.pageYOffset > 300 ? setShowButton(true) : setShowButton(false);
+  //   };
+  //   window.addEventListener("scroll", handleScrollButtonVisibility);
 
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScrollButtonVisibility);
+  //   };
+  // }, []);
+
+  // const handleScrollToTop = () => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // };
 
   return (
     <>
-      <Navbar onClick={() => scrollToSection()} />
+      <Navbar />
+      {/* {showButton && (
+        <div className="scrollToTop">
+          <button onClick={handleScrollToTop}>
+            <img></img>
+          </button>
+        </div>
+      )} */}
       <Layout>
         <Hero />
-        <About ref={aboutRef} />
-        <Products ref={productsRef} />
-        <Contact ref={contactRef} />
+        <About />
+        <Products />
+        <Contact />
       </Layout>
       <Footer />
     </>

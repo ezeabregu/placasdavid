@@ -13,6 +13,7 @@ import {
   AiFillFacebook,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -40,15 +41,22 @@ const Contact = () => {
             </div>
             <div>
               <p>Seguinos</p>
-              <a
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
                 href="https://www.instagram.com/placasdavid/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
                 target="blank"
               >
                 <AiFillInstagram size={50} color="#833ab4" />
-              </a>
-              <a href="https://www.facebook.com/Placasdavid/" target="blank">
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                href="https://www.facebook.com/Placasdavid/"
+                target="blank"
+              >
                 <AiFillFacebook size={50} color="#1877f2" />
-              </a>
+              </motion.a>
             </div>
           </TextContainerStyled>
         </ContactTextContainterStyled>
