@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
         scroll-behavior: smooth;
     }
     body{
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Quicksand", sans-serif;
         overflow-x: hidden;
         color: var(--blue);
         a{

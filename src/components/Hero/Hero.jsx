@@ -5,17 +5,36 @@ import {
   HeroTextContainterStyled,
 } from "./HeroStyles";
 import heroImage from "../../img/heroImg.jpg";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <>
       <HeroContainterStyled>
         <HeroTextContainterStyled>
-          <h1>PLACAS DAVID</h1>
-          <h3>Placas Antihumedad</h3>
+          <motion.h1
+            initial={{ x: "-100vw" }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring", delay: 0.5 }}
+          >
+            PLACAS DAVID
+          </motion.h1>
+          <motion.h3
+            initial={{ x: "-100vw" }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring", delay: 0.5 }}
+          >
+            Placas Antihumedad
+          </motion.h3>
         </HeroTextContainterStyled>
         <HeroImageContainterStyled>
-          <img src={heroImage} alt="HeroImage" />
+          <motion.img
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            src={heroImage}
+            alt="HeroImage"
+          />
         </HeroImageContainterStyled>
       </HeroContainterStyled>
     </>
