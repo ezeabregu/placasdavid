@@ -40,11 +40,12 @@ export const TextContainerStyled = styled.div`
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 10px;
+  gap: 3rem;
   li {
     color: #131415;
   }
   a {
+    margin: 10px 20px;
     color: #131415;
   }
   div {

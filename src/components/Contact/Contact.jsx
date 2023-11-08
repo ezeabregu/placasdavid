@@ -28,16 +28,29 @@ const Contact = () => {
           <h3>Contactate con nosotros</h3>
           <TextContainerStyled>
             <div>
-              <AiFillPhone size={30} color="#131415" />
-              011-3158-1752
-            </div>
-            <div>
-              <AiOutlineWhatsApp size={30} color="#075e54" />
-              +5491131581752
-            </div>
-            <div>
-              <AiFillMail size={30} color="#131415" />
-              alejandro.tonchuk2012@hotmail.com
+              <motion.a
+                whileHover={{ scale: 1.4 }}
+                whileTap={{ scale: 0.9 }}
+                href="tel:1131581752"
+              >
+                <AiFillPhone size={30} color="#131415" />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.4 }}
+                whileTap={{ scale: 0.9 }}
+                href="https://wa.me/5491131581752"
+                target="_blanck"
+                rel="noopener noreferrer"
+              >
+                <AiOutlineWhatsApp size={30} color="#075e54" />
+              </motion.a>
+              <motion.a
+                whileTap={{ scale: 0.9 }}
+                whileHover={{ scale: 1.4 }}
+                href="mailto:alejandro.tonchuk2012@hotmail.com?body=Enviar información sobre las placas."
+              >
+                <AiFillMail size={30} color="#131415" />
+              </motion.a>
             </div>
             <div>
               <p>Seguinos</p>
