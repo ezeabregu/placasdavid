@@ -4,8 +4,9 @@ export const AboutContainterStyled = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 30px 10px;
   gap: 30px;
   border-radius: 5px;
   max-width: 1300px;

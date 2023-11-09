@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeroContainterStyled = styled.section`
-  height: calc(80vh - 100px);
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -12,7 +12,7 @@ export const HeroContainterStyled = styled.section`
     flex-direction: column;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1600px) {
     height: 30vh;
   }
 `;

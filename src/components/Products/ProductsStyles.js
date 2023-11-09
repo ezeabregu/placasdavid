@@ -7,6 +7,9 @@ export const ProductsWrapper = styled.div`
   width: 100%;
   max-width: 1300px;
   margin: 0 15px;
+  h3 {
+    text-align: center;
+  }
   @media (max-width: 768px) {
     text-align: center;
   }
