@@ -4,6 +4,8 @@ export const FooterContainerStyled = styled.footer`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
   p {
     color: #131415;
   }

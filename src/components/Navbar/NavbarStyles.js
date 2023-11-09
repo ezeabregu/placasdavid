@@ -6,6 +6,8 @@ export const ContainerStyled = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
 `;
 
 export const ContainetLogoStyled = styled.div`

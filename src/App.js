@@ -8,6 +8,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Button from "./components/Button/Button";
 import { useEffect, useState } from "react";
+import Fade from "react-reveal/Fade";
 
 function App() {
   const [backToTopButton, setBackToTopButton] = useState(false);
@@ -26,11 +27,14 @@ function App() {
     <>
       <Navbar />
       {backToTopButton && <Button />}
+
       <Layout>
-        <Hero />
-        <About />
-        <Products />
-        <Contact />
+        <Fade duration={1500}>
+          <Hero />
+          <About />
+          <Products />
+          <Contact />
+        </Fade>
       </Layout>
       <Footer />
     </>

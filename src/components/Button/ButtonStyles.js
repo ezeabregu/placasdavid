@@ -7,5 +7,6 @@ export const ButtonStyled = styled.div`
   height: 50px;
   width: 50px;
   font-size: 50px;
+  z-index: 999;
   cursor: pointer;
 `;

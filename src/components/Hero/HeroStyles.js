@@ -11,6 +11,10 @@ export const HeroContainterStyled = styled.section`
   @media (max-width: 768px) {
     flex-direction: column;
   }
+
+  @media (min-width: 1200px) {
+    height: 30vh;
+  }
 `;
 
 export const HeroTextContainterStyled = styled.div`
