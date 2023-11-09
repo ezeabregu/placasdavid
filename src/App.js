@@ -29,7 +29,7 @@ function App() {
       {backToTopButton && <Button />}
 
       <Layout>
-        <Fade Top distance="10%" duration={1500}>
+        <Fade Top distance="10%" duration={1000}>
           <Hero />
           <About />
           <Products />
