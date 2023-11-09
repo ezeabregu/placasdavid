@@ -16,11 +16,31 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
 
+  const logoVariants = {
+    hidden: { rotate: -180, scale: 0 },
+    visible: {
+      rotate: 0,
+      scale: 1,
+      transition: { duration: 1 },
+    },
+  };
+
+  const linksVariants = {
+    hidden: { opacity: 0, scale: 0 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+  };
+
   return (
     <ContainerStyled>
       <ContainetLogoStyled>
         <a href="/">
-          <img src={logo} alt="logo" />
+          <motion.img
+            src={logo}
+            alt="logo"
+            variants={logoVariants}
+            initial="hidden"
+            animate="visible"
+          />
         </a>
       </ContainetLogoStyled>
       <ContainerLinksStyled>
@@ -43,27 +63,33 @@ const Navbar = () => {
           </MenuContainerStyled>
         </motion.div>
         <LinksStyled>
-          <motion.a
-            href="#about"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
+          <motion.div
+            variants={linksVariants}
+            initial="hidden"
+            animate="visible"
           >
-            <SpanStyled>Nosotros</SpanStyled>
-          </motion.a>
-          <motion.a
-            href="#products"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <SpanStyled>Placas</SpanStyled>
-          </motion.a>
-          <motion.a
-            href="#contact"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <SpanStyled>Contacto</SpanStyled>
-          </motion.a>
+            <motion.a
+              href="#about"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <SpanStyled>Nosotros</SpanStyled>
+            </motion.a>
+            <motion.a
+              href="#products"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <SpanStyled>Placas</SpanStyled>
+            </motion.a>
+            <motion.a
+              href="#contact"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <SpanStyled>Contacto</SpanStyled>
+            </motion.a>
+          </motion.div>
         </LinksStyled>
       </ContainerLinksStyled>
     </ContainerStyled>
