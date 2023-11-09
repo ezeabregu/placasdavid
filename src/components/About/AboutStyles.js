@@ -6,8 +6,8 @@ export const AboutContainterStyled = styled.section`
   justify-content: space-around;
   margin: 0 auto;
   padding: 50px 0;
-  border-radius: 5px;
   gap: 30px;
+  border-radius: 5px;
   max-width: 1300px;
   background-color: #e2e2e2;
   @media (max-width: 768px) {
