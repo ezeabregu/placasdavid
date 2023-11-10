@@ -1,6 +1,6 @@
 import React from "react";
 import { ProductsWrapper, ProductsContainter } from "./ProductsStyles";
-import { products, cieloraso } from "../data/Productos";
+import { products, cielorraso } from "../data/Productos";
 import ProductCard from "./ProductCard";
 
 const Products = () => {
@@ -13,9 +13,9 @@ const Products = () => {
           return <ProductCard {...product} key={product.id} />;
         })}
       </ProductsContainter>
-      <h3>Cieloraso</h3>
+      <h3>Cielorraso</h3>
       <ProductsContainter>
-        {cieloraso.map((product) => {
+        {cielorraso.map((product) => {
           return <ProductCard {...product} key={product.id} />;
         })}
       </ProductsContainter>

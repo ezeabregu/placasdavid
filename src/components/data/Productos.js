@@ -37,53 +37,41 @@ export const products = [
   },
 ];
 
-export const cieloraso = [
+export const cielorraso = [
   {
     id: 1,
-    title: "Piedra Mar del plata",
-    img: "https://res.cloudinary.com/dhiecguhs/image/upload/v1699573825/03-Cieloraso_n37bzf.jpg",
-    size: "52x26",
+    title: "Sol",
+    img: "https://res.cloudinary.com/dhiecguhs/image/upload/v1699583597/Sol_pljitz.jpg",
+    size: "60x60",
   },
   {
     id: 2,
-    title: "Travertino",
-    img: "https://res.cloudinary.com/dhiecguhs/image/upload/v1699573825/06-Cieloraso_esshjr.jpg",
-    size: "54x27",
+    title: "Pompeya",
+    img: "https://res.cloudinary.com/dhiecguhs/image/upload/v1699583596/Pompeya_dkq9fe.jpg",
+    size: "60x60",
   },
   {
     id: 3,
-    title: "Pizarras",
-    img: "https://res.cloudinary.com/dhiecguhs/image/upload/v1699573825/02-Cieloraso_jeesqi.jpg",
-    size: "56x56",
+    title: "Mediterraneo",
+    img: "https://res.cloudinary.com/dhiecguhs/image/upload/v1699583596/Mediterraneo_flvzn3.jpg",
+    size: "60x60",
   },
   {
     id: 4,
-    title: "Sol",
-    img: "https://res.cloudinary.com/dhiecguhs/image/upload/v1699573826/08-Cieloraso_xsdgll.jpg",
+    title: "Pinza",
+    img: "https://res.cloudinary.com/dhiecguhs/image/upload/v1699583596/Pinza_ce4rum.jpg",
     size: "60x60",
   },
   {
     id: 5,
-    title: "Frisos",
-    img: "https://res.cloudinary.com/dhiecguhs/image/upload/v1699573825/07-Cieloraso_qeqcra.jpg",
-    size: "66cm c/u",
+    title: "Alicante",
+    img: "https://res.cloudinary.com/dhiecguhs/image/upload/v1699583596/Alicante_j8dmx3.jpg",
+    size: "60x60",
   },
   {
     id: 6,
-    title: "Ondas",
-    img: "https://res.cloudinary.com/dhiecguhs/image/upload/v1699573825/04-Cieloraso_p5nxvb.jpg",
-    size: "60x60",
-  },
-  {
-    id: 7,
-    title: "Ondas",
-    img: "https://res.cloudinary.com/dhiecguhs/image/upload/v1699573825/01-Cieloraso_vqmwyf.jpg",
-    size: "60x60",
-  },
-  {
-    id: 8,
-    title: "Ondas",
-    img: "https://res.cloudinary.com/dhiecguhs/image/upload/v1699573825/05-Cieloraso_tsutsv.jpg",
+    title: "Liso",
+    img: "https://res.cloudinary.com/dhiecguhs/image/upload/v1699583596/Liso_mydw0l.jpg",
     size: "60x60",
   },
 ];

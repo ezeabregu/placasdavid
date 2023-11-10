@@ -8,7 +8,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Button from "./components/Button/Button";
 import { useEffect, useState } from "react";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 function App() {
   const [backToTopButton, setBackToTopButton] = useState(false);
@@ -29,7 +29,7 @@ function App() {
       {backToTopButton && <Button />}
 
       <Layout>
-        <Fade Top distance="10%" duration={1000}>
+        <Fade cascade={true} delay={0.5} duration={500}>
           <Hero />
           <About />
           <Products />
