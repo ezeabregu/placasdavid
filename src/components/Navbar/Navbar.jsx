@@ -49,13 +49,13 @@ const Navbar = () => {
             <div onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
               <div className={click ? "menu active" : "menu"}>
-                <a href="about" onClick={closeMenu}>
+                <a href="#about" onClick={closeMenu}>
                   Nosotros
                 </a>
-                <a href="products" onClick={closeMenu}>
+                <a href="#products" onClick={closeMenu}>
                   Placas
                 </a>
-                <a href="contact" onClick={closeMenu}>
+                <a href="#contact" onClick={closeMenu}>
                   Contacto
                 </a>
               </div>
